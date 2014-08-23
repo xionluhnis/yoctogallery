@@ -57,7 +57,10 @@ class Yocto_Gallery{
     foreach($this->sections as $tpl => $val){
       $twig_vars['sections'][$tpl] = $val;
     }
+    /*
+     * TODO correct sorting here
     ksort($twig_vars['sections']);
+     */
 
     // parent_url
     $url = $twig_vars['current_page']['url'];
